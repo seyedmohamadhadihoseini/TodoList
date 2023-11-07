@@ -1,0 +1,100 @@
+header {
+  text-align: center;
+  background-color: blueviolet;
+  color: white;
+  font-size: xx-large;
+  width: 100%;
+  padding: 20px;
+}
+.title {
+  color: brown;
+  text-align: center;
+}
+#new-todo {
+  display: block;
+  padding: 20px;
+  font-size: x-large;
+  width: 90%;
+  margin: 0 auto;
+}
+#todo-all {
+  border: 1px solid wheat;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#todo-all li{
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns:1fr  10fr 1fr 1fr;
+    font-weight: 500;
+    border: 1px solid wheat;
+    padding: 10px;
+    position: relative;
+}
+
+img{
+    width: 30px;
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    overflow: hidden;
+}
+
+#filter-actions{
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr 1fr;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20%;
+}
+#filter-actions > div{
+    margin-right: 50px;
+    text-align: center;
+}
+#all-op-actions button{
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2794b9;
+    border: none;
+}
+#all-op-actions button:hover{
+    padding: 11px;
+}
+#remaining-todo-part{
+    text-align: center;
+    margin-left: 5px;
+    margin: 0 auto;
+}
+#filter-by-color div{
+    display: block;
+}
+body{
+    overflow-x: hidden;
+}
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    display: inline;
+    padding: 10px;
+    background-color: #2794b9;
+}
+
+.checkbox-round:checked {
+    background-color: green;
+}
+.item-selected{
+    background-color: green;
+}
